@@ -29,3 +29,9 @@
 	path = modules/prompt/external/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
+[submodule "modules/autopair/external"]
+	path = modules/autopair/external
+	url = https://github.com/hlissner/zsh-autopair.git
+[submodule "modules/tipz/external"]
+	path = modules/tipz/external
+	url = https://github.com/molovo/tipz.git

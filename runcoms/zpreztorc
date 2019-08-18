@@ -50,7 +50,9 @@ zstyle ':prezto:load' pmodule \
   'command-not-found' \
   'syntax-highlighting' \
   'autosuggestions' \
-  'prompt'
+  'prompt' \
+  'autopair' \
+  'tipz'
 
 #
 # Autosuggestions
