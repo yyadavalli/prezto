@@ -3,7 +3,104 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+#   Yashwanth Yadavalli <yashwanth.yadavalli@protonmail.com>
+
+# XDG Base directory specification
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+
+# xmonad
+export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
+export XMONAD_CACHE_DIR="$HOME/.cache/xmonad"
+export XMONAD_DATA_DIR="$HOME/.local/share/xmonad"
+
+# Boot - Clojure build tool
+export BOOT_HOME="$HOME/Applications/boot"
+export BOOT_LOCAL_REPO="${XDG_CACHE_HOME}/m2/repository"
+
+# Coursier cache
+export COURSIER_CACHE="${XDG_CACHE_HOME}/coursier/cache/v1"
+
+# CUDA
+export CUDA_CACHE_PATH="${XDG_CACHE_HOME}/nv"
+
+# Docker
+export DOCKER_CONFIG="${XDG_CONFIG_HOME}/docker"
+
+# Gdrive
+export GDRIVE_CONFIG_DIR="${XDG_DATA_HOME}/gdrive"
+
+# GnuPG
+export GNUPGHOME="${XDG_CONFIG_HOME}/gnupg"
+export GPG_TTY=$(tty)
+
+# Gradle
+export GRADLE_HOME="${XDG_CONFIG_HOME}/gradle"
+export GRADLE_USER_HOME="${XDG_CACHE_HOME}/gradle"
+
+# Haskell - cabal-install configuration
+export CABAL_CONFIG="${XDG_CONFIG_HOME}/cabal/config"
+
+# Haskell - stack configuration
+export STACK_ROOT="$HOME/Applications/stack"
+
+# INPUTRC
+export INPUTRC="${XDG_CONFIG_HOME}/inputrc"
+
+# Jupyter notebooks
+export JUPYTER_CONFIG_DIR="${XDG_CONFIG_HOME}/jupyter"
+export IPYTHONDIR="${XDG_CONFIG_HOME}/ipython"
+
+# Lein
+export LEIN_HOME="${XDG_CONFIG_HOME}/lein"
+
+# less
+export LESSKEY="$XDG_CONFIG_HOME"/less/lesskey
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+
+# Node.js, NPM and nodenv
+export NODENV_ROOT="$HOME/Applications/nodenv"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
+
+# Python version Manager
+export PYLINTHOME="$XDG_CACHE_HOME/pylint"
+export PYENV_ROOT="$HOME/Applications/pyenv"
+
+# Postgres
+export PSQLRC="$XDG_CONFIG_HOME/pg/psqlrc"
+export PSQL_HISTORY="$XDG_CACHE_HOME/pg/psql_history"
+export PGPASSFILE="$XDG_CONFIG_HOME/pg/pgpass"
+export PGSERVICEFILE="$XDG_CONFIG_HOME/pg/pg_service.conf"
+
+# Ruby
+export RBENV_ROOT="$HOME/Applications/rbenv"
+export BUNDLE_USER_HOME="${XDG_DATA_HOME}/bundle"
+export BUNDLE_USER_CACHE="${XDG_CACHE_HOME}/bundle"
+export BUNDLE_USER_CONFIG="${XDG_CONFIG_HOME}/bundle"
+export BUNDLE_USER_PLUGIN="${XDG_CONFIG_HOME}/bundle/plugin"
+
+export GEM_HOME="${XDG_DATA_HOME}/gem"
+export GEM_SPEC_CACHE="${XDG_CACHE_HOME}/gem"
+
+# Rust
+export RUSTUP_HOME="$HOME/Applications/rustup"
+export RUST_SRC_PATH="$RUSTUP_HOME/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"
+export CARGO_HOME="$HOME/Applications/cargo"
+
+# Spark use python3
+export PYSPARK_PYTHON=python3
+
+# Terminfo
+export TERMINFO="${XDG_DATA_HOME}/terminfo"
+
+# Vagrant
+export VAGRANT_HOME="${XDG_DATA_HOME}/vagrant"
+export VAGRANT_ALIAS_FILE="${XDG_DATA_HOME}/vagrant/aliases"
+
+# Xauthority cookies
+export XAUTHORITY="${XDG_CACHE_HOME}/Xauthority"
 
 # Ensure that a non-login, non-interactive shell has a defined environment.
 if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then

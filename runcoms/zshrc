@@ -3,11 +3,54 @@
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+#   Yashwanth Yadavalli <yashwanth.yadavalli@protonmail.com>
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Profile emacs startup time
+alias ep="time emacs --batch -l ~/.emacs.d/init.el --eval '(message \"Hello\")'"
+
+# nvim as default for vi
+alias vi="nvim"
+alias vim="nvim"
+
+# Ammonite REPL
+alias amm="amm -h ${XDG_CONFIG_HOME}/ammonite"
+
+# Bat - A cat(1) clone with wings
+alias cat="bat"
+
+# ctags
+alias ctags="ctags --options=${XDG_CONFIG_HOME}/ctags.conf"
+
+# Hoogle with custom database location
+alias hoogle="hoogle --database ${XDG_DATA_HOME}/hoogle/default.hoo"
+
+# isync (mbsync)
+alias mbsync="mbsync -c ${XDG_CONFIG_HOME}/isync/mbsyncrc"
+
+# Maven
+alias mvn="mvn -gs ${XDG_CONFIG_HOME}/maven/settings.xml"
+
+# Loop setup for iso files
+alias loopiso="udisksctl loop-setup -r -f"
+
+# Use QtWebEngine for qutebrowser
+alias qutebrowser="qutebrowser --backend webengine"
+
+# Replace tree (& variants) with exa aliases
+alias tree="exa --tree"
+alias stree="tree -I target"
+
+# tmux with config file
+alias tmux="tmux -f ${XDG_CONFIG_HOME}/tmux.conf"
+
+# wget
+alias wget="wget --hsts-file=${XDG_CACHE_HOME}/wget-hsts"
+
+# Named directories
+data=/mnt/SeagateBackupPlus
+: ~data
