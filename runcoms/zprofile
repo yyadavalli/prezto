@@ -50,9 +50,7 @@ typeset -gU cdpath fpath mailpath path
 
 # Set the list of directories that Zsh searches for programs.
 path=(
-  $HOME/Applications/ghcup/bin
-  $HOME/Applications/cargo/bin
-  $HOME/Applications/bin
+  $HOME/.toolbox/bin
   $XDG_DATA_HOME/bin
   /usr/local/{bin,sbin}
   $path

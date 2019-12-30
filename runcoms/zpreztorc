@@ -41,7 +41,7 @@ zstyle ':prezto:load' pmodule \
   'history-substring-search' \
   'git' \
   'node' \
-  'pacman' \
+  'homebrew' \
   'python' \
   'ruby' \
   'ssh' \
