@@ -24,3 +24,8 @@ if [[ -o INTERACTIVE && -t 2 ]]; then
   fi
 
 fi >&2
+
+if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  XKB_DEFAULT_LAYOUT=us
+  exec sway
+fi

@@ -9,11 +9,11 @@
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CURRENT_DESKTOP=sway
 
-# xmonad
-export XMONAD_CONFIG_DIR="$HOME/.config/xmonad"
-export XMONAD_CACHE_DIR="$HOME/.cache/xmonad"
-export XMONAD_DATA_DIR="$HOME/.local/share/xmonad"
+# Wayland
+export QT_QPA_PLATFORM=wayland-egl
+export MOZ_ENABLE_WAYLAND=1
 
 # Boot - Clojure build tool
 export BOOT_HOME="$HOME/Applications/boot"
