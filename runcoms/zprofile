@@ -17,8 +17,14 @@ fi
 # Editors
 #
 
-export EDITOR='emacsclient -c'
-export VISUAL='emacsclient -c'
+if [[ -n "$SSH_TTY" ]] || [[ -n "$SSH_CLIENT" ]]; then
+  export EDITOR='emacsclient -c'
+  export VISUAL='emacsclient -c'
+else
+  export EDITOR='emacsclient -c -n'
+  export VISUAL='emacsclient -c -n'
+fi
+
 export ALTERNATE_EDITOR=""
 export PAGER='less'
 
