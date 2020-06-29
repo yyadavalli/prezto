@@ -35,3 +35,6 @@
 [submodule "modules/tipz/external"]
 	path = modules/tipz/external
 	url = https://github.com/molovo/tipz.git
+[submodule "modules/zsh-z"]
+	path = modules/zsh-z
+	url = https://github.com/agkozak/zsh-z.git

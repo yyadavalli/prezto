@@ -52,7 +52,8 @@ zstyle ':prezto:load' pmodule \
   'autosuggestions' \
   'prompt' \
   'autopair' \
-  'tipz'
+  'tipz' \
+  'zsh-z'
 
 #
 # Autosuggestions
