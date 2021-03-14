@@ -84,9 +84,6 @@ export BUNDLE_USER_CACHE="${XDG_CACHE_HOME}/bundle"
 export BUNDLE_USER_CONFIG="${XDG_CONFIG_HOME}/bundle"
 export BUNDLE_USER_PLUGIN="${XDG_CONFIG_HOME}/bundle/plugin"
 
-export GEM_HOME="${XDG_DATA_HOME}/gem"
-export GEM_SPEC_CACHE="${XDG_CACHE_HOME}/gem"
-
 # Rust
 export RUSTUP_HOME="$HOME/Applications/rustup"
 export RUST_SRC_PATH="$RUSTUP_HOME/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/"
