@@ -77,3 +77,6 @@ alias bbb='bball brazil-build'
 alias bbra='bbr apollo-pkg'
 
 alias grm='for file in .git/refs/wip/wtree/refs/heads/*; rm $file'
+
+# Enable autocompletion for mechanic.
+[ -f "$HOME/.local/share/mechanic/complete.zsh" ] && source "$HOME/.local/share/mechanic/complete.zsh"
