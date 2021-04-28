@@ -44,6 +44,7 @@ export GRADLE_USER_HOME="${XDG_CACHE_HOME}/gradle"
 
 # Haskell - cabal-install configuration
 export CABAL_CONFIG="${XDG_CONFIG_HOME}/cabal/config"
+export GHCUP_USE_XDG_DIRS=1
 
 # Haskell - stack configuration
 export STACK_ROOT="$HOME/Applications/stack"
